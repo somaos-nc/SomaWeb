@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="SOMA | Brainwave Soundscapes">
+	<main class="max-w-5xl mx-auto px-6 py-20">
+		<header class="text-center mb-24">
+			<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-purple-600 mb-6 drop-shadow-[0_0_15px_rgba(0,243,255,0.5)]">SOMA</h1>
+			<p class="text-xl md:text-2xl text-gray-400 font-light mb-10">Translate Brainwaves into Soundscapes.</p>
+			<div class="flex justify-center gap-6">
+				<a href="#downloads" class="px-8 py-3 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/50 hover:bg-cyan-500/40 hover:border-cyan-400 transition-all shadow-[0_0_15px_rgba(0,243,255,0.3)]">Download Now</a>
+				<a href="https://github.com/noam/Soma" target="_blank" class="px-8 py-3 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 hover:bg-purple-500/20 transition-all">View Source</a>
+			</div>
+		</header>
+
+		<section class="grid md:grid-cols-3 gap-8 mb-32">
+			<div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800 backdrop-blur-sm">
+				<h3 class="text-xl text-cyan-400 font-bold mb-3">Real-time EEG</h3>
+				<p class="text-gray-400">Process live brainwave data via serial port or use the built-in simulation mode for development.</p>
+			</div>
+			<div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800 backdrop-blur-sm">
+				<h3 class="text-xl text-purple-400 font-bold mb-3">FFT Analysis</h3>
+				<p class="text-gray-400">Advanced spectrum analysis isolates core brainwave rhythms and translates them to frequencies.</p>
+			</div>
+			<div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800 backdrop-blur-sm">
+				<h3 class="text-xl text-pink-400 font-bold mb-3">Generative Audio</h3>
+				<p class="text-gray-400">Output the synthesized soundscapes through native audio or send MIDI to your favorite DAW.</p>
+			</div>
+		</section>
+
+		<section id="downloads" class="text-center">
+			<h2 class="text-3xl font-bold mb-12 text-white">Get Soma</h2>
+			<div class="grid md:grid-cols-3 gap-6">
+				<a href="#" class="block p-8 rounded-xl bg-gray-900 border border-gray-800 hover:border-cyan-500/50 hover:bg-gray-800 transition-all group">
+					<div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🐧</div>
+					<h3 class="text-lg font-semibold text-white">Linux</h3>
+					<p class="text-sm text-gray-500 mt-2">AppImage / tar.gz</p>
+				</a>
+				<a href="#" class="block p-8 rounded-xl bg-gray-900 border border-gray-800 hover:border-purple-500/50 hover:bg-gray-800 transition-all group">
+					<div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🍎</div>
+					<h3 class="text-lg font-semibold text-white">macOS</h3>
+					<p class="text-sm text-gray-500 mt-2">DMG (Intel & Apple Silicon)</p>
+				</a>
+				<a href="#" class="block p-8 rounded-xl bg-gray-900 border border-gray-800 hover:border-pink-500/50 hover:bg-gray-800 transition-all group">
+					<div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🪟</div>
+					<h3 class="text-lg font-semibold text-white">Windows</h3>
+					<p class="text-sm text-gray-500 mt-2">Portable EXE</p>
+				</a>
+			</div>
+			<p class="mt-8 text-sm text-gray-500">Currently linking to placeholders. Binaries will be available via GitHub Releases.</p>
+		</section>
+	</main>
+	
+	<footer class="border-t border-gray-800 mt-24 py-8 text-center text-gray-500">
+		<p>&copy; {new Date().getFullYear()} Soma Project. Open Source under MIT License.</p>
+	</footer>
+</Layout>
