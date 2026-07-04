@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# Soma Web 
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Soma](public/favicon.svg)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This repository contains the source code for the [Soma Project landing page](https://somaos-nc.github.io/SomaWeb/).
 
-## 🚀 Project Structure
+**Soma** is an application designed to translate real-time brainwave (EEG) data into generative musical soundscapes. This website serves as the central hub for the project, providing information about its features and direct links to download the compiled binaries.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tech Stack
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+This static website was built with a focus on speed, simplicity, and a modern aesthetic:
+- **Framework:** [Astro](https://astro.build/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Hosting:** GitHub Pages
+- **Deployment:** GitHub Actions
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Local Development
 
-## 🧞 Commands
+To run this website locally on your machine:
 
-All commands are run from the root of the project, from a terminal:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/somaos-nc/SomaWeb.git
+   cd SomaWeb
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## 👀 Want to learn more?
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The site will be available at `http://localhost:4321`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   The static files will be generated in the `dist/` directory.
+
+## Contributing
+
+While this repository is specifically for the static landing page, the core application logic (Flutter/Dart) lives in the main [Soma repository](https://github.com/noam/Soma).
+
+## License
+
+This project is open-source under the MIT License.
