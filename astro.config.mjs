@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://noam.github.io', // Placeholder, user will configure if different
+  site: 'https://somaos-nc.github.io', // Placeholder, user will configure if different
   base: '/SomaWeb',
   vite: {
     plugins: [tailwindcss()]
